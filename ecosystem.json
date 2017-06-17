@@ -26,9 +26,9 @@
       }
     },
     "dev": {
-      "user": "root",
+      "user": "liwei",
       "host": ["39.108.64.128"],
-      "port": "39999",
+      "port": "22",
       "ref": "origin/master",
       "repo": "git@github.com:mangogit/vue.js2.0-master.git",
       "path": "/home/liwei/vue.js2.0-master/dev",
