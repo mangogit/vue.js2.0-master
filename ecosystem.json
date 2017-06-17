@@ -1,8 +1,8 @@
 {
   "apps": [
     {
-      "name": "vue.js2.0",
-      "script": ".src/main.js",
+      "name": "vue.js2.0-master",
+      "script": "src/main.js",
       "env": {
         "COMMON_VARIABLE": "true"
       },
@@ -17,12 +17,25 @@
       "host": ["39.108.64.128"],
       "port": "39999",
       "ref": "origin/master",
-      "repo": "git@github.com:mangogit/vue.js2.0.git",
-      "path": "/root/www/website/production",
+      "repo": "git@github.com:mangogit/cnode.git",
+      "path": "/root/www/cnode/production",
       "ssh_options": "StrictHostKeyChecking=no",
-      // "post-deploy": "pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && npm run build && pm2 startOrRestart ecosystem.json --env production",
       "env": {
         "NODE_ENV": "production"
+      }
+    },
+    "dev": {
+      "user": "root",
+      "host": ["39.108.64.128"],
+      "port": "39999",
+      "ref": "origin/master",
+      "repo": "git@github.com:mangogit/vue.js2.0-master.git",
+      "path": "/home/liwei/vue.js2.0-master/dev",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "post-deploy": "npm install --registry=https://registry.npm.taobao.org && npm run dev && pm2 startOrRestart ecosystem.json --env dev",
+      "env": {
+        "NODE_ENV": "dev"
       }
     }
   }
