@@ -163,6 +163,7 @@
       bottom: 0
       width: 100%
       overflow: hidden
+      background: #fff
       .overview
         position: relative
         padding: 18px
