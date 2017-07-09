@@ -135,7 +135,7 @@
       bottom: 0
       width: 100%
       overflow: hidden
-      background: #fff
+      // background: #fff
       .overview
         display: flex
         padding: 18px 0

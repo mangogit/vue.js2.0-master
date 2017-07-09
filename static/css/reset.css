@@ -31,7 +31,7 @@ footer, header, menu, nav, section {
 
 body {
     line-height: 1;
-    background: url('./loading.gif') no-repeat center 250px;
+    // background: url('./loading.gif') no-repeat center 250px;
 }
 
 blockquote, q {
