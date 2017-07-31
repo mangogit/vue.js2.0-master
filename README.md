@@ -1,6 +1,8 @@
-# li
+# 基于vue.js仿制饿了么
 
-> A Vue.js project
+## 扫下方二维码看效果
+![扫描下方二维码看效果](https://github.com/mangogit/mangogit.github.io/blob/master/elem.png)
+
 
 ## Build Setup
 
